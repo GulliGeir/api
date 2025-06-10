@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   try {
-    const response = await fetch('http://apis.is/concerts');
+    const response = await fetch('https://apis.is/concerts');
     const data = await response.json();
     // Allow any domain to access this endpoint (for browser CORS)
     res.setHeader('Access-Control-Allow-Origin', '*');
